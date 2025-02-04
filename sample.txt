@@ -1,2 +1,61 @@
 hello
 NANTHAN
+
+Microsoft Windows [Version 10.0.22631.4751]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\>mkdir devopsample
+
+D:\>cd devopsample
+
+D:\devopsample>git init
+Initialized empty Git repository in D:/devopsample/.git/
+
+D:\devopsample>notepad sample.txt
+
+D:\devopsample>git add .
+
+D:\devopsample>git commit -m "sample"
+[master (root-commit) 9a4c544] sample
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+D:\devopsample>git remote add origin https://github.com/Arvind22cse/Devops_sample.git
+
+D:\devopsample>git branch
+* master
+
+D:\devopsample>git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 111.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Arvind22cse/Devops_sample.git
+ * [new branch]      master -> master
+
+D:\devopsample>git add .
+
+D:\devopsample>git commit -m "msg"
+[master de8bfb8] msg
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\devopsample>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\devopsample>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 258 bytes | 258.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Arvind22cse/Devops_sample.git
+   9a4c544..de8bfb8  master -> master
+branch 'master' set up to track 'origin/master'.
+
+D:\devopsample>
